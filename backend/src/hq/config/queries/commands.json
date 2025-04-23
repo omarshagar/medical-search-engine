@@ -1,0 +1,18 @@
+{
+    "sys_commands": {
+      
+        "predict": {"inputs": null, "model_id": null}
+    },
+
+    "processing_commands": {
+
+      "image": {
+
+        "read": {"inputs": null, "execution_priority": 0},
+        "write": {"inputs": null, "execution_priority": 0},
+        "resize": {"inputs": null, "execution_priority": 0},
+        "reshape": {"inputs": null, "execution_priority": 1},
+        "rescale": {"inputs": null, "execution_priority": 1}
+      }
+    }
+}

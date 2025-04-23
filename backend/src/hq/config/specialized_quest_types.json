@@ -1,0 +1,26 @@
+{
+    "all_specs":{
+         "model_ids": [],
+        "childs": ["pulmonology", "cardiology"]
+    },
+    
+    "cardiology":{
+        "model_ids": [],
+        "childs":  ["cardiomyopathy"]
+    } ,
+    "pulmonology":{
+        "model_ids":[],
+        "childs": ["lung"]
+    } ,
+
+    "lung": {
+        "model_ids": ["chexpert001"],
+        "childs": []
+    },
+
+    "cardiomyopathy": {
+        "model_ids": ["chexpert001", "chexpert002"],
+        "childs": []
+    }
+}
+    

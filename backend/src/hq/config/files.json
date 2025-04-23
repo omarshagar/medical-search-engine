@@ -1,0 +1,6 @@
+{
+    "image": {
+        "supported_extensions": ["jpg", "png", "jpeg", "dcm", "img"], 
+        "max_size": {"value": 5, "unit":  "MB"}
+    }
+}

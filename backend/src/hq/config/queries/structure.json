@@ -1,0 +1,154 @@
+ {
+    "max_path_length":5,
+    "categories":["images", "signals", "txts"],
+    "states":{
+        "pure": 0,
+        "ready": 1,
+        "on_going": 2,
+        "waiting": 3,
+        "gathered": 4,
+        "success": 5,
+        "failed":-1
+    },
+
+   "pure":{
+        "state_code": 0,
+        "query_id": "",
+        "command": "",
+        "inputs": {
+          "specialization": [""],
+          "types": ["image","txt","signal"],
+          "image": ["subtype"],
+          "txt": [],
+          "signal": [],
+          "subtype": ["name"],
+          "name": ["urls"]
+        },
+     "specializations": {}
+    } ,
+
+  "specialized_pure":{
+      "state_code": 0,
+      "query_id": "",
+      "command": "",
+      "content": {
+        "model_id": "chexpert001",
+        "types": ["image","txt","signal"],
+        "image": ["subtype"],
+        "txt": [],
+        "signal": [],
+        "subtype": ["name"],
+        "name": ["urls"]
+      }
+  } ,
+
+   "ready":{
+        "state_code": 1,
+        "query_id": "",
+        "command": "",
+        "metadata": {
+          "spectialization@1": {
+            "model_id": "model_id",
+            "inputs": [
+              {
+                "index": 0,
+                "url": "/some/url"
+              },
+              {
+               "index": 1,
+                "url": "dfdfdf"
+              }
+            ]
+
+          },
+          "spectialization@2": {
+
+          }
+        }
+    }  ,
+     "on_going2":{
+        "state_code": 2,
+        "stage":0,
+        "query_id":"",
+        "path_length":0,
+        "category":"",
+        "specialization":"",
+        "model":"",
+        "files_ids":[
+          {
+            "index": 0,
+            "url": "ggg/gg"
+          }
+        ]
+    }  ,
+   "on_going":{
+        "state_code": 2,
+        "command": "predict",
+        "stage":0,
+        "query_id":"",
+        "path_length":0,
+        "category":"image",
+        "metadata": [{
+              "specialization":"",
+              "model":"",
+              "index":1
+        }],
+        "files_urls":[],
+        "data": []
+    },
+      "gathered":{
+        "state_code": 3,
+        "stage": 0,
+        "query_id": "",
+        "command": "",
+        "total_on_going": 0,
+        "recieved_on_going": 0,
+        "content": {
+          "spectialization1": {
+            "model_id": "model_id",
+            "inputs": [
+              {
+                "bindex": 0,
+                "url": "/some/url",
+                "data": []
+              },
+              {
+               "index": 1,
+                "url": "dfdfdf",
+                "data": []
+              }
+            ]
+          },
+          "spectialization2": {
+          }
+        }
+    },
+
+
+     "waiting":{
+
+    }  ,
+
+
+
+
+
+
+       "finished":{
+        "status_code": 2,
+        "query_id": "",
+        "total_sub_queries":0,
+        "finished_sub_queries":0,
+        "images": [
+            {"id": "", "specialization": "", "type": ""}
+        ],
+        "signals": [
+            {"id": "", "specialization": "", "type": ""}
+        ],
+        "txts": [
+          {"id": "", "specialization": "", "type": ""}
+        ]
+    }
+ }
+
+
